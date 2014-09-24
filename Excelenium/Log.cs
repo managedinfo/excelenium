@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Excelenium - An excel driven Selenium test suite
+ * Copyright (c) Paul Connolly, paul.connolly@managed.info 2014
+ * All rights reserved
+ */
+
+using System;
 
 namespace Excelenium
 {
