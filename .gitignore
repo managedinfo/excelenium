@@ -1,0 +1,4 @@
+# ignore binary build directories
+Excelenium/bin/
+Excelenium/obj/
+
