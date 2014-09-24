@@ -9,8 +9,6 @@ using System.Diagnostics;
 using System.Text;
 using Excel = Microsoft.Office.Interop.Excel;
 
-
-
 namespace Excelenium
 {
     class Excelenium
@@ -35,7 +33,7 @@ namespace Excelenium
             Excel.Range range;
 
             xlApp = new Excel.Application();
-            xlWorkBook = xlApp.Workbooks.Open(inputFile);
+            xlWorkBook = xlApp.Workbooks.Open(System.IO.Path.GetFullPath(inputFile)); // use get full path to prevent issues with relative paths on the command line
             xlWorkSheet = (Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
 
             range = xlWorkSheet.UsedRange;

@@ -10,7 +10,7 @@ namespace Excelenium
 {
     static class LOG
     {
-        static private int logLevel;
+        static private int logLevel = 1;
 
         static public void setLogLevel(String level)
         {
